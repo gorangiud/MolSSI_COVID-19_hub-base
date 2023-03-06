@@ -1,0 +1,318 @@
+title "nirmatrelvir"
+start nirmatrelvir
+echo
+charge  0
+
+memory total 1000 mb
+#print debug
+SCRATCH_DIR /tmp
+PERMANENT_DIR .
+
+prepare
+    directory_3 ../
+    system nirmatrelvir
+    source ./nirmatrelvir-F.pdb
+    amber
+    new_top new_seq
+    new_rst
+    modify atom 401:_NK   quantum
+    modify atom 401:_HK   quantum
+    modify atom 401:_CK1  quantum
+    modify atom 401:_OK1  quantum
+    modify atom 401:_CK2  quantum
+    modify atom 401:_HK2  quantum
+    modify atom 401:_CK3  quantum
+    modify atom 401:2HK3  quantum
+    modify atom 401:3HK3  quantum
+    modify atom 401:_CK4  quantum
+    modify atom 401:2HK4  quantum
+    modify atom 401:3HK4  quantum
+    modify atom 401:_CK5  quantum
+    modify atom 401:2HK5  quantum
+    modify atom 401:3HK5  quantum
+    modify atom 401:_CK6  quantum
+    modify atom 401:_HK6  quantum
+    modify atom 401:_CK7  quantum
+    modify atom 401:_NK7  quantum
+    modify atom 401:_NK8  quantum
+    modify atom 401:_HK8  quantum
+    modify atom 401:_CK8  quantum
+    modify atom 401:_OK8  quantum
+    modify atom 401:_CK9  quantum
+    modify atom 401:_HK9  quantum
+    modify atom 401:_NL1  quantum
+    modify atom 401:_CL2  quantum
+    modify atom 401:2HL2  quantum
+    modify atom 401:3HL2  quantum
+    modify atom 401:_CL3  quantum
+    modify atom 401:_HL3  quantum
+    modify atom 401:_CL4  quantum
+    modify atom 401:_HL4  quantum
+    modify atom 401:_CL5  quantum
+    modify atom 401:_CL6  quantum
+    modify atom 401:2HL6  quantum
+    modify atom 401:3HL6  quantum
+    modify atom 401:4HL6  quantum
+    modify atom 401:_CL7  quantum
+    modify atom 401:2HL7  quantum
+    modify atom 401:3HL7  quantum
+    modify atom 401:4HL7  quantum
+    modify atom 401:_CM1  quantum
+    modify atom 401:_OM1  quantum
+    modify atom 401:_CM2  quantum
+    modify atom 401:_HM2  quantum
+    modify atom 401:_NM3  quantum
+    modify atom 401:_HM3  quantum
+    modify atom 401:_CM4  quantum
+    modify atom 401:_OM4  quantum
+    modify atom 401:_CM5  quantum
+    modify atom 401:2FM5  quantum
+    modify atom 401:3FM5  quantum
+    modify atom 401:4FM5  quantum
+    modify atom 401:_CN1  quantum
+    modify atom 401:_CN2  quantum
+    modify atom 401:2HN2  quantum
+    modify atom 401:3HN2  quantum
+    modify atom 401:4HN2  quantum
+    modify atom 401:_CN3  quantum
+    modify atom 401:2HN3  quantum
+    modify atom 401:3HN3  quantum
+    modify atom 401:4HN3  quantum
+    modify atom 401:_CN4  quantum
+    modify atom 401:2HN4  quantum
+    modify atom 401:3HN4  quantum
+    modify atom 401:4HN4  quantum
+    modify atom   25:_CA   quantum
+    modify atom   25:_HA   quantum
+    modify atom   25:_CB   quantum
+    modify atom   25:_HB   quantum
+    modify atom   25:_CG2  quantum
+    modify atom   25:2HG2  quantum
+    modify atom   25:3HG2  quantum
+    modify atom   25:4HG2  quantum
+    modify atom   25:_OG1  quantum
+    modify atom   25:_HG1  quantum
+    modify atom   25:_C    quantum
+    modify atom   25:_O    quantum
+    modify atom   26:_N    quantum
+    modify atom   26:_H    quantum
+    modify atom   26:_CA   quantum
+    modify atom   26:_HA   quantum
+    modify atom   26:_C    quantum
+    modify atom   26:_O    quantum
+    modify atom   27:_N    quantum
+    modify atom   27:_H    quantum
+    modify atom   27:_CA   quantum
+    modify atom   27:_HA   quantum
+    modify atom   41:_CA   quantum
+    modify atom   41:_HA   quantum
+    modify atom   41:_CB   quantum
+    modify atom   41:2HB   quantum
+    modify atom   41:3HB   quantum
+    modify atom   41:_CG   quantum
+    modify atom   41:_ND1  quantum
+    modify atom   41:_HD1  quantum
+    modify atom   41:_CD2  quantum
+    modify atom   41:_HD2  quantum
+    modify atom   41:_CE1  quantum
+    modify atom   41:_HE1  quantum
+    modify atom   41:_NE2  quantum
+    modify atom   41:_HE2  quantum
+    modify atom  141:_CA   quantum
+    modify atom  141:_HA   quantum
+    modify atom  141:_C    quantum
+    modify atom  141:_O    quantum
+    modify atom  142:_N    quantum
+    modify atom  142:_H    quantum
+    modify atom  142:_CA   quantum
+    modify atom  142:_HA   quantum
+    modify atom  142:_CB   quantum
+    modify atom  142:2HB   quantum
+    modify atom  142:3HB   quantum
+    modify atom  142:_CG   quantum
+    modify atom  142:_OD1  quantum
+    modify atom  142:_ND2  quantum
+    modify atom  142:2HD2  quantum
+    modify atom  142:3HD2  quantum
+    modify atom  142:_C    quantum
+    modify atom  142:_O    quantum
+    modify atom  143:_N    quantum
+    modify atom  143:_H    quantum
+    modify atom  143:_CA   quantum
+    modify atom  143:2HA   quantum
+    modify atom  143:3HA   quantum
+    modify atom  143:_C    quantum
+    modify atom  143:_O    quantum
+    modify atom  144:_N    quantum
+    modify atom  144:_H    quantum
+    modify atom  144:_CA   quantum
+    modify atom  144:_HA   quantum
+    modify atom  144:_CB   quantum
+    modify atom  144:2HB   quantum
+    modify atom  144:3HB   quantum
+    modify atom  144:_OG   quantum
+    modify atom  144:_HG   quantum
+    modify atom  144:_C    quantum
+    modify atom  144:_O    quantum
+    modify atom  145:_N    quantum
+    modify atom  145:_H    quantum
+    modify atom  145:_CA   quantum
+    modify atom  145:_HA   quantum
+    modify atom  145:_CB   quantum
+    modify atom  145:2HB   quantum
+    modify atom  145:3HB   quantum
+    modify atom  145:_SG   quantum
+    modify atom  145:_C    quantum
+    modify atom  145:_O    quantum
+    modify atom  146:_N    quantum
+    modify atom  146:_H    quantum
+    modify atom  146:_CA   quantum
+    modify atom  146:2HA   quantum
+    modify atom  146:3HA   quantum
+    modify atom  146:_C    quantum
+    modify atom  146:_O    quantum
+    modify atom  147:_N    quantum
+    modify atom  147:_H    quantum
+    modify atom  147:_CA   quantum
+    modify atom  147:_HA   quantum
+    modify atom  147:_CB   quantum
+    modify atom  147:2HB   quantum
+    modify atom  147:3HB   quantum
+    modify atom  147:_OG   quantum
+    modify atom  147:_HG   quantum
+    modify atom  147:_C    quantum
+    modify atom  147:_O    quantum
+    modify atom  148:_N    quantum
+    modify atom  148:_H    quantum
+    modify atom  148:_CA   quantum
+    modify atom  148:_HA   quantum
+    modify atom  162:_CA   quantum
+    modify atom  162:_HA   quantum
+    modify atom  162:_C    quantum
+    modify atom  162:_O    quantum
+    modify atom  163:_N    quantum
+    modify atom  163:_H    quantum
+    modify atom  163:_CA   quantum
+    modify atom  163:_HA   quantum
+    modify atom  163:_CB   quantum
+    modify atom  163:2HB   quantum
+    modify atom  163:3HB   quantum
+    modify atom  163:_CG   quantum
+    modify atom  163:_ND1  quantum
+    modify atom  163:_CE1  quantum
+    modify atom  163:_HE1  quantum
+    modify atom  163:_NE2  quantum
+    modify atom  163:_HE2  quantum
+    modify atom  163:_CD2  quantum
+    modify atom  163:_HD2  quantum
+    modify atom  163:_C    quantum
+    modify atom  163:_O    quantum
+    modify atom  164:_N    quantum
+    modify atom  164:_H    quantum
+    modify atom  164:_CA   quantum
+    modify atom  164:_HA   quantum
+    modify atom  164:_CB   quantum
+    modify atom  164:2HB   quantum
+    modify atom  164:3HB   quantum
+    modify atom  164:_CG   quantum
+    modify atom  164:_ND1  quantum
+    modify atom  164:_CD2  quantum
+    modify atom  164:_HD2  quantum
+    modify atom  164:_CE1  quantum
+    modify atom  164:_HE1  quantum
+    modify atom  164:_NE2  quantum
+    modify atom  164:_HE2  quantum
+    modify atom  164:_C    quantum
+    modify atom  164:_O    quantum
+    modify atom  165:_N    quantum
+    modify atom  165:_H    quantum
+    modify atom  165:_CA   quantum
+    modify atom  165:_HA   quantum
+    modify atom  501:2HW  quantum
+    modify atom  501:_OW  quantum
+    modify atom  501:3HW  quantum
+    modify atom  504:2HW  quantum
+    modify atom  504:_OW  quantum
+    modify atom  504:3HW  quantum
+    modify atom  505:2HW  quantum
+    modify atom  505:_OW  quantum
+    modify atom  505:3HW  quantum
+    modify atom  506:2HW  quantum
+    modify atom  506:_OW  quantum
+    modify atom  506:3HW  quantum
+    modify atom  509:2HW  quantum
+    modify atom  509:_OW  quantum
+    modify atom  509:3HW  quantum
+    modify atom 1774:2HW  quantum
+    modify atom 1774:_OW  quantum
+    modify atom 1774:3HW  quantum
+    modify atom 1775:2HW  quantum
+    modify atom 1775:_OW  quantum
+    modify atom 1775:3HW  quantum
+    modify atom 1776:2HW  quantum
+    modify atom 1776:_OW  quantum
+    modify atom 1776:3HW  quantum
+    modify atom 1778:2HW  quantum
+    modify atom 1778:_OW  quantum
+    modify atom 1778:3HW  quantum
+    modify atom 1779:2HW  quantum
+    modify atom 1779:_OW  quantum
+    modify atom 1779:3HW  quantum
+    update lists
+    ignore
+    write nirmatrelvir.rst
+    write nirmatrelvir.pdb
+end
+
+task prepare
+
+driver
+    tight
+end
+
+md
+    system nirmatrelvir
+    noshake solute
+    cutoff 10 qmmm 10
+    msa 30000
+end
+
+
+basis
+    * library "6-31G*"
+end
+
+dft
+    disp vdw 3
+    maxiter 250
+    xc pbe0
+    direct
+    grid
+end
+
+qmmm
+    region qmlink mm_solute
+    method bfgs lbfgs
+    maxiter  5   100
+    density espfit
+    ncycles 50
+    convergence 1d-7
+    bqzone 200
+end
+
+constraints
+#    spring bond   122   123   1.0   4.0
+#    spring bond    18    147   1.0   6.0
+end
+
+
+task qmmm dft optimize
+
+
+prepare
+    system nirmatrelvir
+    read rst nirmatrelvir.rst
+    write solute pdb nirmatrelvir-F.pdb
+end
+
+task prepare
